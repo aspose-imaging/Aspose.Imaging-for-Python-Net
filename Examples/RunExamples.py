@@ -1,8 +1,7 @@
-# Запускает все тесты из подкаталога
-# Входные параметры: 
-# Автор: Сиденко Е.В.
-# Дата: 31.03.2023
-# Версия: 1.0
+# Run all tests from the specified directory
+# Author  : Evgeniy Sidenko
+# Date    : 31 March 2023
+# Version : 1.0
 import sys
 import os
 from aspose.imaging import License

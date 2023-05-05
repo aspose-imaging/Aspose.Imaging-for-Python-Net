@@ -1,4 +1,5 @@
-![PyPi](https://test.pypi.org/project/aspose.imaging/) 
+![GitHub all releases](https://img.shields.io/github/downloads/aspose-imaging/Aspose.imaging-for-Python-NET/total) ![GitHub](https://img.shields.io/github/license/aspose-imaging/Aspose.imaging-for-Python-NET)
+----
 
 # API for Image Processing
 
@@ -90,4 +91,5 @@ with Image.create(options, width, height) as image:
 }
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/imaging/python-net) | [Docs](https://docs.aspose.com/imaging/python-net/) | [Demos](https://products.aspose.app/imaging/family) | [API Reference](https://apireference.aspose.com/imaging/python-net) | [Examples](https://github.com/aspose-imaging/Aspose.Imaging-for-Python-NET) | [Blog](https://blog.aspose.com/category/imaging/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/imaging) | [Temporary License](https://purchase.aspose.com/temporary-license)
+----
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/imaging/python-net) | [Docs](https://docs.aspose.com/imaging/python-net/) | [Demos](https://products.aspose.app/imaging/family) | [API Reference](https://apireference.aspose.com/imaging/python-net) | [Examples](https://github.com/aspose-imaging/Aspose.Imaging-for-Python-NET) | [Blog](https://blog.aspose.com/category/imaging/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/imaging) | [Temporary License](https://purchase.aspose.com/temporary-license) | [Package page](https://pypi.org/project/aspose-imaging-python-net/)
