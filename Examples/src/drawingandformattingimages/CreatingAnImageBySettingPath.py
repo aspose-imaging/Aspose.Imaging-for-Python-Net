@@ -1,0 +1,43 @@
+﻿# GROUP: DRAWING_AND_FORMATTING_IMAGES
+import aspose.pycore as aspycore
+from aspose.imaging.imageoptions import BmpOptions
+from aspose.imaging.sources import FileCreateSource
+import os
+from aspose.imaging import Image
+
+# Initialization
+def get_data_root_dir_local():
+	if 'BASE_DIR' in os.environ:
+		return os.environ["BASE_DIR"]
+	return "."
+	
+def get_output_dir_local():
+	return get_data_root_dir_local()
+
+if 'get_data_root_dir' not in dir():
+	get_data_root_dir = get_data_root_dir_local
+
+if 'get_output_dir' not in dir():
+	get_output_dir = get_output_dir_local
+
+# Example code:
+print("Running example CreatingAnImageBySettingPath")
+# The path to the documents directory.
+data_dir = os.path.join(get_data_root_dir(), "DrawingAndFormattingImages")
+# Creates an instance of BmpOptions and set its various properties
+with BmpOptions() as image_options:
+	image_options.bits_per_pixel = 24
+	# Define the source property for the instance of BmpOptions  Second boolean parameter determines if the file is temporal or not
+	out_file = os.path.join(get_output_dir(), "CreatingAnImageBySettingPath_out.bmp")
+	image_options.source = FileCreateSource(out_file, False)
+	# Creates an instance of Image and call Create method by passing the BmpOptions object
+	with Image.create(image_options, 500, 500) as image:
+		out_file2 = os.path.join(get_output_dir(), "CreatingAnImageBySettingPath1_out.bmp")
+		image.save(out_file2)
+
+if 'SAVE_OUTPUT' not in os.environ:
+	os.remove(out_file)
+	os.remove(out_file2)
+
+print("Finished example CreatingAnImageBySettingPath")
+
