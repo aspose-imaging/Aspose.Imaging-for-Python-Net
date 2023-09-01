@@ -19,7 +19,7 @@ if 'get_output_dir' not in dir():
 
 # Example code:
 # The path to the documents directory.
-data_dir = os.path.join(get_data_root_dir(), 'cdr')
+data_dir = os.path.join(get_output_dir(), 'cdr')
 
 print("Running example PixelPerfectTextAlignment")
 
@@ -55,13 +55,13 @@ def draw_string(base_folder, align):
 			
 			if align == "Left":
 				alignment = StringAlignment.NEAR
-				line_x = round(x)
+				line_x = int(x)
 			elif align == "Center":
 				alignment = StringAlignment.CENTER
-				line_x = round(x + w / 2.0)
+				line_x = int(x + w // 2)
 			elif align == "Right":
 				alignment = StringAlignment.FAR
-				line_x = x + w
+				line_x = int(x + w)
 
 			string_format = StringFormat(StringFormatFlags.EXACT_ALIGNMENT)
 			string_format.alignment = alignment
@@ -74,9 +74,9 @@ def draw_string(base_folder, align):
 								RectangleF(x, y, w, s.height), string_format)
 					y += s.height
 
-				graphics.draw_line(pen, Point(x, y), Point(x + w, y))
+				graphics.draw_line(pen, Point(int(x), int(y)), Point(int(x + w), int(y)))
 
-			graphics.draw_line(pen, Point(line_x, 0), Point(line_x, y))
+			graphics.draw_line(pen, Point(line_x, 0), Point(line_x, int(y)))
 			# save all changes.
 			image.save(output_file_name)
 

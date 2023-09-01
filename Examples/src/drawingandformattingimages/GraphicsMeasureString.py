@@ -16,8 +16,8 @@ if 'get_data_root_dir' not in dir():
 
 # Example code:
 print("Running example GraphicsMeasureString")
-data_dir = os.path.join(get_data_root_dir(), "gif")
-filepath = os.path.join(data_dir, "ezgif.com-gif-maker(1)___.gif")
+data_dir = os.path.join(get_data_root_dir(), "jpeg")
+filepath = os.path.join(data_dir, "input.jpg")
 with Image.load(filepath) as backgound_image:
 	gr = Graphics(backgound_image)
 	format_ = StringFormat()
