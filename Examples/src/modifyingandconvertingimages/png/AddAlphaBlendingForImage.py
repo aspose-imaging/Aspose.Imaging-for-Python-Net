@@ -1,6 +1,8 @@
 ﻿# GROUP: MODIFYING_AND_CONVERTING_IMAGES
 import aspose.pycore as aspycore
 from aspose.imaging import Image, RasterImage, Point
+from aspose.imaging.imageoptions import PngOptions
+from aspose.imaging.fileformats.png import PngColorType
 import os
 
 
@@ -27,9 +29,11 @@ with aspycore.as_of(Image.load(os.path.join(data_dir, "image0.png")), RasterImag
 	with aspycore.as_of(Image.load(os.path.join(data_dir, "aspose_logo.png")), RasterImage) as overlay:
 		center = Point((background.width - overlay.width) // 2, (background.height - overlay.height) // 2)
 		background.blend(center, overlay, overlay.bounds, 127)
-		background.save(out_file)
+		options = PngOptions()
+		options.color_type = PngColorType.TRUECOLOR_WITH_ALPHA
+		background.save(out_file, options)
 
 if 'SAVE_OUTPUT' not in os.environ:
 	os.remove(out_file)
 
-print("Finished example ApplyFilterMethod")
+print("Finished example AddAlphaBlendingForImage")
