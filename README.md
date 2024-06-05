@@ -3,7 +3,7 @@
 
 # API for Image Processing
 
-[Aspose.Imaging for Python via .NET](https://products.aspose.com/imaging/python-net) is a library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also **Aspose.Imaging** library supports drawing and work with graphic primitives. Image exporting and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
+[Aspose.Imaging for Python via .NET](https://products.aspose.com/imaging/python-net) is Another Python Imaging Library offering advanced image processing features. Developers can create, edit or convert images in their own application. Also **Aspose.Imaging** library supports drawing and work with graphic primitives. Image exporting and conversion (including uniform multi-page image processing) is the one of API core features along with image transformations (resize, crop, flip&rotate, binarization, grayscale, adjust), advanced image manipulation features (filtering, dithering, masking, deskewing) and memory optimization strategies.
 
 <p align="center"> 
   <a title="Download ZIP" href="https://github.com/aspose-imaging/Aspose.Imaging-for-Python-NET/archive/main.zip">
@@ -45,7 +45,7 @@ Directory | Description
 
 ## Platform Independence
 
-Aspose.Imaging for Python via .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, as well as Linux x64. Aspose.Imaging for Python is based on .NET Core 3.1 platform, so you need install it as well.
+Aspose.Imaging for Python via .NET can be used to develop applications on Windows Desktop (x86, x64), Windows Server (x86, x64), Windows Azure, as well as Linux x64, macOS 10.14 (x86_64), and macOS 11.0 (arm64) . Aspose.Imaging for Python is based on .NET Core 6.0 platform, so you need install it as well.
 
 ## Get Started with Aspose.Imaging for Python via .NET
 
