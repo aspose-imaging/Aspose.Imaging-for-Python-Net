@@ -30,10 +30,8 @@ with aspycore.as_of(Image.load(input_file_name), CdrImage) as image:
 	options = PngOptions()
 	options.color_type = PngColorType.TRUECOLOR_WITH_ALPHA
 	# Set rasterization options for file format
-	options.vector_rasterization_options = aspycore.as_of(
-		image.get_default_options(
-			[Color.white, image.width, image.height]),
-			VectorRasterizationOptions)
+	options.vector_rasterization_options = image.get_default_options(
+			[Color.white, image.width, image.height]).vector_rasterization_options
 	options.vector_rasterization_options.text_rendering_hint = TextRenderingHint.SINGLE_BIT_PER_PIXEL
 	options.vector_rasterization_options.smoothing_mode = SmoothingMode.NONE
 	image.save(out_file, options)
