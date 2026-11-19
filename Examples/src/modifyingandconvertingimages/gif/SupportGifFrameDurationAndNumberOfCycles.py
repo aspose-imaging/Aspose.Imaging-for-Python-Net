@@ -30,7 +30,7 @@ with aspycore.as_of(Image.load(filepath), GifImage) as image:
 	image.set_frame_time(2000)
 	(aspycore.as_of(image.pages[0], GifFrameBlock)).frame_time = 200
 	obj_init = GifOptions()
-	obj_init.loops_count = 4
+	obj_init.loop_count = 4
 	image.save(output_path, obj_init)
 
 if 'SAVE_OUTPUT' not in os.environ:

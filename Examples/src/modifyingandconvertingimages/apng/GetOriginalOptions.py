@@ -21,7 +21,7 @@ print("Running example GetOriginalOptions")
 data_dir = os.path.join(get_data_root_dir(), 'apng')
 with aspycore.as_of(Image.load(os.path.join(data_dir, "SteamEngine.png")), ApngImage) as image:
 	options = aspycore.as_of(image.get_original_options(), ApngOptions)
-	if options.num_plays != 0 or options.default_frame_time != 10 or options.bit_depth != 8:
+	if options.loop_count != 0 or options.default_frame_time != 10 or options.bit_depth != 8:
 		print("Exist some errors in default options")
 
 print("Finished example GetOriginalOptions")

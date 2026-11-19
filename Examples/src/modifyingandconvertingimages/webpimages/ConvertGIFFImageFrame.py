@@ -51,7 +51,7 @@ with Image.load(os.path.join(data_dir, "asposelogo.gif")) as image:
 
 			# Set Properties of WebP image.
 			webp.options.anim_background_color = 0xf
-			webp.options.anim_loop_count = 0
+			webp.options.loop_count = 0  # Infinity
 			webp.options.quality = 50
 			webp.options.lossless = False
 			# Save WebP image.
